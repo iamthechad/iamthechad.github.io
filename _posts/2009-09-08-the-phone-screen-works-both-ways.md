@@ -1,8 +1,6 @@
 ---
 title: The Phone Screen Works Both Ways
-layout: post
 description: A phone screen is typically used to screen applicants for a job, but it gave me enough information to make a decision about not wanting to work for the company.
-date: '2009-09-08T00:00:00.000Z'
 tags: development
 ---
 

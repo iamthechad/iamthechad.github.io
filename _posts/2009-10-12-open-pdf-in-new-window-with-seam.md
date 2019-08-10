@@ -1,8 +1,6 @@
 ---
 title: Open PDF in New Window with Seam
-layout: post
 description: A simple method to open PDFs in a new window while displaying validation errors in the original window. The PDF window will not open if there are validation or other messages.
-date: '2009-10-12T00:00:00.000Z'
 tags: development seam
 ---
 

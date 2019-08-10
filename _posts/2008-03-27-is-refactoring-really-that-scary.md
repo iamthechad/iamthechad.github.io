@@ -1,8 +1,6 @@
 ---
 title: Is Refactoring Really That Scary?
-layout: post
 description: I got admonished at my new job for coding practices that have become second nature to me. Is aggressive refactoring really that scary?
-date: '2008-03-27T00:00:00.000Z'
 tags: development
 ---
 

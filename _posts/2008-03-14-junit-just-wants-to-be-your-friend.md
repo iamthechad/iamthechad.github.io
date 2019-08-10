@@ -1,8 +1,6 @@
 ---
 title: JUnit Just Wants To Be Your Friend
-layout: post
 description: My co-worker tests his code with the `toString()` and visual grep method. I'm not sure he would have ever caught the bug on his own. I keep trying to explain that unit tests are a Good Thing...
-date: '2008-03-14T00:00:00.000Z'
 tags: development
 ---
 

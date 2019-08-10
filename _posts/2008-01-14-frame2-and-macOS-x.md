@@ -1,7 +1,5 @@
 ---
 title: Frame2 and MacOS X
-layout: post
-date: '2008-01-14T00:00:00.000Z'
 tags: development
 ---
 

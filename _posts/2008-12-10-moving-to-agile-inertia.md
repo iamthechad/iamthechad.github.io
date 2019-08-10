@@ -1,8 +1,6 @@
 ---
 title: 'Moving to Agile: Inertia'
-layout: post
 description: Switching to an Agile process shines the light on a developer who has been successfully hiding his lack of work, but what can I do to change his behavior?
-date: '2008-12-10T00:00:00.000Z'
 tags: development agile
 ---
 

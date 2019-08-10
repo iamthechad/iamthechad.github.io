@@ -1,7 +1,5 @@
 ---
 title: Supporting the iPhone 5 Screen
-layout: post
-date: '2012-09-20T00:00:00.000Z'
 tags: ios development
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Working with NodeJS source
-layout: post
 description: I've been trying to set up a development environment for working on NodeJS source, with little luck.
-date: '2015-05-20T00:00:00.000Z'
 tags: development nodejs
 ---
 

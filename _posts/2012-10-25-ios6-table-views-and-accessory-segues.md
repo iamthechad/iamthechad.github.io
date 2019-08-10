@@ -1,8 +1,6 @@
 ---
 title: iOS6 table views and accessory segues
-layout: post
 description: Getting the correct indexPath for a table cell's accessory action segue is different than for a cell selection segue.
-date: '2012-10-25T00:00:00.000Z'
 tags: ios development
 ---
 

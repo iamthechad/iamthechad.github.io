@@ -1,8 +1,6 @@
 ---
 title: Optimizing images for iOS (and more)
-layout: post
 description: A simple tool for reducing PNG file sizes.
-date: '2012-09-21T00:00:00.000Z'
 tags: development ios
 ---
 

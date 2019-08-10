@@ -1,7 +1,5 @@
 ---
 title: Overly Ambitious Eclipse Decorators
-layout: post
-date: '2007-09-28T00:00:00.000Z'
 tags: development
 ---
 

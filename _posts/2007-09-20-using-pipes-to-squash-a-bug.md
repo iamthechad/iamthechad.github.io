@@ -1,7 +1,5 @@
 ---
 title: Using Pipes to Squash a Bug
-layout: post
-date: '2007-09-20T00:00:00.000Z'
 tags: development
 ---
 

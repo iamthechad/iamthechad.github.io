@@ -1,8 +1,6 @@
 ---
 title: Make It A Good Day
-layout: post
 description: Don't just wait for a good day to "happen". I've been able to make some attitude changes and make good days.
-date: '2009-01-14T00:00:00.000Z'
 tags: health
 ---
 

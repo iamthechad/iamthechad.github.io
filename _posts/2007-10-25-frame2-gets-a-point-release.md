@@ -1,7 +1,5 @@
 ---
 title: Frame2 Gets a Point Release
-layout: post
-date: '2007-10-25T00:00:00.000Z'
 tags: development
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: Pulse Jet in Action
-layout: post
-date: '2007-05-02T00:00:00.000Z'
 categories: making
 keywords: making
 youtubeId: duAkHm_PkHM

@@ -1,7 +1,5 @@
 ---
 title: Flicker Vertigo Revisited
-layout: post
-date: '2006-12-18T00:00:00.000Z'
 tags: work health
 ---
 

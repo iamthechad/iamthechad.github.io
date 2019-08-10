@@ -1,7 +1,5 @@
 ---
 title: Version 1.3 is Released
-layout: post
-date: '2007-09-07T00:00:00.000Z'
 tags: development
 ---
 
