@@ -1,8 +1,6 @@
 ---
 title: Simple Data Analysis with Hive
-layout: post
 description: Follow this simple example to get started analyzing real-world data with Hive and Hadoop.
-date: '2013-07-17T00:00:00.000Z'
 tags: development hive
 ---
 

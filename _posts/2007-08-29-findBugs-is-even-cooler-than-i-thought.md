@@ -1,7 +1,5 @@
 ---
 title: FindBugs Is Even Cooler Than I Thought
-layout: post
-date: '2007-08-29T00:00:00.000Z'
 tags: development
 ---
 

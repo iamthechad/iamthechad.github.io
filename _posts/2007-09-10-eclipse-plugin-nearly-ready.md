@@ -1,7 +1,5 @@
 ---
 title: Eclipse Plugin Nearly Ready
-layout: post
-date: '2007-09-10T00:00:00.000Z'
 tags: development
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: 'Made: Jam Jar Pulse Jet'
-layout: post
-date: '2007-04-29T00:00:00.000Z'
 tags: making
 ---
 

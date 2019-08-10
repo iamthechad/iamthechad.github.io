@@ -1,8 +1,6 @@
 ---
 title: Raising Beef is not Killing the Environment
-layout: post
 description: Raising beef is not the water hungry process that some people want you to think it is.
-date: '2009-06-07T00:00:00.000Z'
 tags: environment
 ---
 

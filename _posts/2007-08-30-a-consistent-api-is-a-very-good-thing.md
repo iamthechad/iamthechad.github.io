@@ -1,7 +1,5 @@
 ---
 title: A Consistent API is a Very Good Thing
-layout: post
-date: '2007-08-30T00:00:00.000Z'
 tags: development
 ---
 

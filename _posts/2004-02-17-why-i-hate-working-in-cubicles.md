@@ -1,7 +1,5 @@
 ---
 title: Why I Hate Working in Cubicles
-date: '2004-02-17T00:00:00.000Z'
-layout: post
 tags: work health
 ---
 

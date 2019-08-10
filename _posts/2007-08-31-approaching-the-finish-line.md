@@ -1,7 +1,5 @@
 ---
 title: Approaching the Finish Line
-layout: post
-date: '2007-08-31T00:00:00.000Z'
 tags: development
 ---
 

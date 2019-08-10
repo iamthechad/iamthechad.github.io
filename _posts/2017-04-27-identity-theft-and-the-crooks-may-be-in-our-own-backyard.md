@@ -1,8 +1,5 @@
 ---
 title: 'Identity Theft, And The Crooks May Be In Our Own Backyard'
-layout: post
-date: '2017-04-27T01:27:52.691Z'
-tags: security
 ---
 
 Roughly two weeks ago, my wife received a letter in the mail informing her that her credit card application had been denied. Since she hadn’t applied for anything, our suspicion was immediately aroused.

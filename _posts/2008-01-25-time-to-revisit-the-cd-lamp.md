@@ -1,7 +1,5 @@
 ---
 title: Time To Revisit The CD Lamp
-layout: post
-date: '2008-01-25T00:00:00.000Z'
 tags: making
 ---
 

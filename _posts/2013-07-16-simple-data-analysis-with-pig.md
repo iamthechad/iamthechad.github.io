@@ -1,8 +1,7 @@
 ---
 title: Simple Data Analysis with Pig
-layout: post
 description: Follow this simple example to get started analyzing real-world data with Apache Pig and Hadoop.
-date: '2013-07-16T00:00:00.000Z'
+toc: true
 tags: development pig
 ---
 
