@@ -1,7 +1,9 @@
 ---
 title: JUnit Just Wants To Be Your Friend
-description: My co-worker tests his code with the `toString()` and visual grep method. I'm not sure he would have ever caught the bug on his own. I keep trying to explain that unit tests are a Good Thing...
-tags: development
+excerpt: My co-worker tests his code with the `toString()` and visual grep method. I'm not sure he would have ever caught the bug on his own.
+tags: development java testing
+categories: Development
+classes: wide
 ---
 
 This is why you’re not allowed to have alcohol in the workplace.

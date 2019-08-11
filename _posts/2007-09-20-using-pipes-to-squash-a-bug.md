@@ -1,6 +1,9 @@
 ---
 title: Using Pipes to Squash a Bug
-tags: development
+tags: development java eclipse
+categories: Frame2
+excerpt: "There’s been a bug in the Frame2 Eclipse plugin from day 1 that I believe I have finally squashed."
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._
@@ -11,7 +14,7 @@ My original stab at fixing the problem was to change the file as it’s always b
 
 Luckily, Google turned up some suggestions, most notably using piped streams. My first attempt looked like this:
 
-```
+```java
 PipedInputStream in = new PipedInputStream();
 PipedOutputStream out = new PipedOutputStream(in);
 config.write(out);
@@ -22,7 +25,7 @@ modelFile.setContents(in, true, true, monitor);
 
 Based on another online snippet, I modified the code to this:
 
-```
+```java
 PipedInputStream in = new PipedInputStream();
 PipedOutputStream out = new PipedOutputStream(in);
 
@@ -42,7 +45,7 @@ This is the variant that I ran across most often online. It uses two threads to 
 
 The “Pipe Broken” message is happening because the the thread doing the writing to the `OutputStream` has terminated and nothing more is being added to it. The solution is to simply close the `OutputStream` after writing the configuration to it. The `OutputStream` is correctly marked as being finished and the exception is not thrown. An examination of the `read()` method in `PipedInputStream` shows why the `OutputStream` must be closed:
 
-```
+```java
 if (closedByWriter) {
    /* closed by writer, return EOF */
    return -1;
@@ -57,7 +60,7 @@ If the writing side of the pipe simply exits, `writeSide.isAlive()` returns `fal
 
 To sum up, the correct example for using piped streams in Java should look like this:
 
-```
+```java
 PipedInputStream in = new PipedInputStream();
 PipedOutputStream out = new PipedOutputStream(in);
 
@@ -70,5 +73,6 @@ new Thread(new Runnable() {
          e.printStackTrace(); // Do more than just this, OK?
       }
    }
-}).start(); doSomethingWithIn(in);
+}).start(); 
+doSomethingWithIn(in);
 ```

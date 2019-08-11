@@ -1,13 +1,14 @@
 ---
 title: Pulse Jet in Action
-categories: making
+categories: Making
 keywords: making
-youtubeId: duAkHm_PkHM
+excerpt: See the jam jar pulse jet operate.
+classes: wide
 ---
 
 [As promised]({{ site.baseurl }}{% post_url 2007-04-29-made-jam-jar-pulse-jet %}), here’s the jam jar pulse jet in action. Let’s just say that it has a unique way of shutting itself down.
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include video id="duAkHm_PkHM" provider="youtube" %}
 
 Here’s a shot of the aftermath:
 

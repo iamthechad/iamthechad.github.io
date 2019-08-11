@@ -1,6 +1,9 @@
 ---
 title: Time To Revisit The CD Lamp
 tags: making
+categories: Making
+excerpt: "About two years ago I finished a project I’d been working on for a while — a CD lamp."
+classes: wide
 ---
 
 About two years ago I finished a project I’d been working on for a while — a CD lamp. I think it turned out pretty well:

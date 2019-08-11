@@ -1,6 +1,9 @@
 ---
 title: Adding Features Uncovers Old Bugs
-tags: development
+tags: development java
+categories: Frame2
+excerpt: "This seems to happen to me no matter what project I’m on. I try to implement a simple (or not so simple) feature and end up exposing at least one bug that’s been hiding around for quite some time."
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

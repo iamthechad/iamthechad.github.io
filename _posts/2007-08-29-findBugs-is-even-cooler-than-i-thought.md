@@ -1,6 +1,9 @@
 ---
 title: FindBugs Is Even Cooler Than I Thought
-tags: development
+tags: development java findbugs
+categories: Frame2
+excerpt: Fine tuning FindBugs to achieve better results.
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._
@@ -11,20 +14,24 @@ Then I went and [RTFM](http://findbugs.sourceforge.net/manual/index.html).
 
 [FindBugs](http://findbugs.sourceforge.net/index.html) has a [filtering system](http://findbugs.sourceforge.net/manual/filter.html) that makes `@SuppressWarnings` look amateur. Here’s an example: in the `SoapRequestProcessor`, [FindBugs](http://findbugs.sourceforge.net/index.html) marked a warning that an `Exception` was being caught when no `Exception` was being thrown. After looking at the code and verifying that the try block in question throws several different exceptions, I created a filter entry. The entry looks like this:
 
-    <Match>
-      <Class name="org.megatome.frame2.front.SoapRequestProcessor"/>
-      <Method name="getEvents"/>
-      <Bug pattern="REC\_CATCH\_EXCEPTION"/>
-    </Match>
+```xml    
+<Match>
+  <Class name="org.megatome.frame2.front.SoapRequestProcessor"/>
+  <Method name="getEvents"/>
+  <Bug pattern="REC_CATCH_EXCEPTION"/>
+</Match>
+```
 
 This tells [FindBugs](http://findbugs.sourceforge.net/index.html) to match a specific bug type in a specified method in a desired class. This entry can be used in both an inclusion or exclusion filter — I use it to exclude that warning from the results.
 
 Here’s a more complex example:
 
-    <Match>
-      <Class name="~.\*introspector\\.Bean\\d+" />
-      <Bug pattern="EI\_EXPOSE\_REP,EI\_EXPOSE\_REP2"/>
-    </Match>
+```xml
+<Match>
+  <Class name="~.*introspector\.Bean\d+" />
+  <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+</Match>
+```
 
 There are some test classes that don’t exactly follow good rules of programming when it comes to dealing with mutability. Since they are test classes, I don’t really care to fix them. Instead I set up the filter to match all classes in an introspector package named Bean1, Bean2, etc. Simple as can be!
 

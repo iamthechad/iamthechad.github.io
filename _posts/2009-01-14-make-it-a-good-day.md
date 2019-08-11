@@ -1,7 +1,9 @@
 ---
 title: Make It A Good Day
-description: Don't just wait for a good day to "happen". I've been able to make some attitude changes and make good days.
+excerpt: Don't just wait for a good day to "happen". I've been able to make some attitude changes and make good days.
 tags: health
+categories: Health
+classes: wide
 ---
 
 Back when I used to work out regularly, there was an older gentleman who was usually changing in the locker room at the same time as me. We would make small talk as people do to be polite. He might have told me his name; I don’t remember very much about him now.

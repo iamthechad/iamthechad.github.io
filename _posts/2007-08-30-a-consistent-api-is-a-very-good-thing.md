@@ -1,6 +1,9 @@
 ---
 title: A Consistent API is a Very Good Thing
-tags: development
+tags: development java
+categories: Frame2
+excerpt: Consistency is an important aspect of API design.
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._
@@ -9,7 +12,7 @@ I’ve been mucking around in the codebase, cleaning up pieces of the API that a
 
 Naturally, this has led to unit test failures. Almost all of the failures have been easy to fix, but once in a while one pops up that makes me scratch my head. Here’s an example:
 
-```
+```java
 public void testGetIfEmpty() {
    assertTrue(this.errors.isEmpty());
    assertNull(this.errors.get(FOO));

@@ -1,7 +1,9 @@
 ---
 title: Is Refactoring Really That Scary?
-description: I got admonished at my new job for coding practices that have become second nature to me. Is aggressive refactoring really that scary?
-tags: development
+excerpt: I got admonished at my new job for coding practices that have become second nature to me. Is aggressive refactoring really that scary?
+tags: development java design
+categories: Development
+classes: wide
 ---
 
 I’ve been coding with an agile mindset for quite some time now. Some practices have become second nature to me over the years. One of these practices is aggressive code refactoring, coupled with test driven development (TDD).

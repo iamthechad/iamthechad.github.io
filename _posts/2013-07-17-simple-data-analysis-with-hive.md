@@ -1,7 +1,9 @@
 ---
 title: Simple Data Analysis with Hive
-description: Follow this simple example to get started analyzing real-world data with Hive and Hadoop.
+excerpt: Follow this simple example to get started analyzing real-world data with Hive and Hadoop.
 tags: development hive
+categories: Development
+toc: true
 ---
 
 Hive is a data warehouse system for Hadoop that facilitates easy data summarization, ad-hoc queries, and the analysis of large datasets stored in Hadoop compatible file systems. Hive provides a mechanism to project structure onto this data and query the data using a SQL-like language called HiveQL.
@@ -24,7 +26,7 @@ Type `head BX-Books.csv` to see the first few lines of the raw data. You’ll no
 
 The first line in the file looks like this:
 
-```
+```bash
 "ISBN";"Book-Title";"Book-Author";"Year-Of-Publication";"Publisher";"Image-URL-S";"Image-URL-M";"Image-URL-L"
 ```
 
@@ -32,7 +34,9 @@ This lines defines the data format of the fields in the file. We’ll want to re
 
 Open a terminal and enter:
 
-`sed 's/\&amp;/\&/g' BX-Books.csv | sed -e '1d' |sed 's/;/$$$/g' | sed 's/"$$$"/";"/g' | sed 's/"//g' > BX-BooksCorrected.txt`
+```bash
+sed 's/\&amp;/\&/g' BX-Books.csv | sed -e '1d' |sed 's/;/$$$/g' | sed 's/"$$$"/";"/g' | sed 's/"//g' > BX-BooksCorrected.txt
+```
 
 This will:
 
@@ -48,7 +52,7 @@ Steps 3 and 4 may look strange, but some of the field content may contain semico
 
 Now that we have some normalized data, we need to add it to the Hadoop file system (HDFS) so that Hive can access it. In the terminal, type:
 
-```
+```bash
 hadoop fs -mkdir input
 hadoop fs -put /path/to/BX-BooksCorrected.txt input
 ```
@@ -61,7 +65,9 @@ Enter `hive` at the console to start Hive.
 
 Once Hive has started, you’ll see the `hive>` command prompt. Let’s verify that our file did get loaded into HDFS.
 
-`dfs -ls input;`
+```bash
+dfs -ls input;
+```
 
 ### Step 4: Analyzing the Data
 
@@ -69,7 +75,7 @@ Now that we have the data ready, let’s do something with it. The simple exampl
 
 **Load the data into a Hive table:**
 
-```
+```bash
 CREATE TABLE IF NOT EXISTS BookData
 > (ISBN STRING,
 > BookTitle STRING,
@@ -89,7 +95,9 @@ LOAD DATA INPATH '/user/cloudera/input/BX-BooksCorrected.txt'
 
 If you want to see what the loaded data structure looks like, you can use the `DESCRIBE` command:
 
-`DESCRIBE BookData;`
+```bash
+DESCRIBE BookData;
+```
 
 ### Finding books by year
 
@@ -97,7 +105,7 @@ We’ll start with the simple analysis of how many books were written by year. I
 
 **Get number of books by year:**
 
-```
+```bash
 SELECT YearOfPublication, COUNT(BookTitle)
 > FROM BookData GROUP BY YearOfPublication;
 ```
@@ -110,7 +118,7 @@ There’s a lot more data in the set beyond years and books counts. What if we w
 
 Let’s do a little bit of cleanup on the data to eliminate the unwanted years.
 
-```
+```bash
 INSERT OVERWRITE TABLE BookData
 > SELECT BookData.*
 > FROM BookData WHERE YearOfPublication > 0;
@@ -120,7 +128,7 @@ This will only keep records where we have a positive year of publication value.
 
 **Generating the final results is again a single query:**
 
-```
+```bash
 SELECT Publisher, BookAuthor, YearOfPublication, COUNT(BookTitle)
 > FROM BookData
 > GROUP BY Publisher, BookAuthor, YearOfPublication;

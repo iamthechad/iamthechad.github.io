@@ -1,6 +1,9 @@
 ---
 title: Known Defects and FindBugs
-tags: development
+tags: development java oss
+categories: Development
+excerpt: "I ran into a bit of a quandary the other day. I had to modify a piece of legacy code in our system — one that has no tests written against it."
+classes: wide
 ---
 
 I ran into a bit of a quandary the other day. I had to modify a piece of legacy code in our system — one that has no tests written against it. My first task was to write as many [JUnit](http://www.junit.org/) tests as I could to document the behavior of the component to help ensure that I didn’t break existing functionality with my changes.
@@ -17,7 +20,7 @@ In the parlance of “[Working Effectively with Legacy Code](http://www.amazon.c
 
 Here’s an example:
 
-```
+```java
 public void testValidateNullResponse() {
    try {
      ProtocolParser.validateResponse(null);
@@ -30,7 +33,7 @@ public void testValidateNullResponse() {
 
 This test documents the system as it currently exists, but the behavior is obviously not correct. The `ProtocolParser` class should be throwing an `InvalidResponseException`, not an `InvalidRequestException`. To document this defect, I change the method name and add the `KnownDefect` annotation to the test method, resulting in the following:
 
-```
+```java
 @KnownDefect("Should throw InvalidResponseException")
 public void testValidateNullResponseShowsKnownDefect() {
    try {

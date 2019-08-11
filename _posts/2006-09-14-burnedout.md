@@ -1,6 +1,9 @@
 ---
 title: Burned Out
 tags: work health
+categories: Health
+excerpt: Burned out
+classes: wide
 ---
 
 I picked up the June/July 2006 issue of [Scientific American Mind](http://www.sciammind.com/) solely for the article on the [Science of Burnout](https://www.scientificamerican.com/magazine/mind/2006/06-01/). I was feeling particularly frustrated with work at the time and it was nice to read an article telling me that things I had been feeling were not out of the ordinary.

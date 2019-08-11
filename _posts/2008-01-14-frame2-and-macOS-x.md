@@ -1,6 +1,9 @@
 ---
 title: Frame2 and MacOS X
-tags: development
+tags: development java macos
+categories: Frame2
+excerpt: Currently, Frame2 does not work on Macs.
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

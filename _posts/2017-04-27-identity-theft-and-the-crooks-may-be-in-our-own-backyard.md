@@ -1,5 +1,9 @@
 ---
 title: 'Identity Theft, And The Crooks May Be In Our Own Backyard'
+excerpt: Local scammers attempted to steal my wife's identity.
+tags: security identity
+categories: Security
+classes: wide
 ---
 
 Roughly two weeks ago, my wife received a letter in the mail informing her that her credit card application had been denied. Since she hadn’t applied for anything, our suspicion was immediately aroused.

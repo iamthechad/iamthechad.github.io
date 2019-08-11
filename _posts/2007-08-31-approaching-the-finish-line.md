@@ -1,6 +1,9 @@
 ---
 title: Approaching the Finish Line
-tags: development
+tags: development java
+categories: Frame2
+excerpt: Frame2 is almost ready to be released as a new version.
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

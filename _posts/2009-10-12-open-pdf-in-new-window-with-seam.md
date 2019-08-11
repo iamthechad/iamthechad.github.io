@@ -1,7 +1,9 @@
 ---
 title: Open PDF in New Window with Seam
-description: A simple method to open PDFs in a new window while displaying validation errors in the original window. The PDF window will not open if there are validation or other messages.
+excerpt: A simple method to open PDFs in a new window while displaying validation errors in the original window.
 tags: development seam
+categories: Development
+classes: wide
 ---
 
 For a recent Seam development project, I had the task of creating a PDF report from some user input and displaying the result in a new window.
@@ -16,7 +18,7 @@ Initially, I used a `<h:commandLink/>` with `target="_blank"`. This worked well 
 
 For this example, the action class is very simple:
 
-```
+```java
 public String getReportURL() {
   return "/pdfpopup/reports/reportDisplay.seam";
 }
@@ -44,7 +46,7 @@ The action simply takes the criteria specified on the JSF page and populates a l
 
 The JSF page looks like this:
 
-```
+```html
 <ui:define name="body">
   <script type="text/javascript">
   //<![CDATA[
@@ -94,7 +96,7 @@ The page template is configured so that any `FacesMessages` will be displayed in
 
 For completeness, here’s the sample page I’m using to create a PDF:
 
-```
+```html
 <p:document xmlns:p="http://jboss.com/products/seam/pdf" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core" title="Sample PDF Report">
   <f:facet name="header">
     <p:font size="12">
