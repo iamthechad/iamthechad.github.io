@@ -1,7 +1,9 @@
 ---
 title: 'Moving to Agile: Inertia'
-description: Switching to an Agile process shines the light on a developer who has been successfully hiding his lack of work, but what can I do to change his behavior?
+excerpt: Switching to an Agile process shines the light on a developer who has been successfully hiding his lack of work, but what can I do to change his behavior?
 tags: development agile
+categories: Agile
+classes: wide
 ---
 
 I’ve been given the dubious honor of leading a team using Scrum as a “pilot” to see how well it works for the company. I’ve used Scrum before and had a good amount of success, so I feel comfortable with the process.

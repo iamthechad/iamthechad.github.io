@@ -1,7 +1,9 @@
 ---
 title: Raising Beef is not Killing the Environment
-description: Raising beef is not the water hungry process that some people want you to think it is.
+excerpt: Raising beef is not the water hungry process that some people want you to think it is.
 tags: environment
+categories: Environment
+classes: wide
 ---
 
 Periodically I see people on Twitter claiming that we shouldn’t eat beef because it takes XXX gallons of water to raise a single pound of meat, where XXX is some ridiculously large number.

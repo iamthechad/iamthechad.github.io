@@ -1,6 +1,9 @@
 ---
 title: 'Made: Jam Jar Pulse Jet'
 tags: making
+categories: Making
+excerpt: I made a jam jar pulse jet.
+classes: wide
 ---
 
 I’ve been receiving [Make](http://www.makezine.com) magazine since its first issue, so I decided it was about time I actually make something. I picked the Jam Jar Pulse Jet from issue 05 ([more info here](http://makezine.com/05/jamjarjet/)). This project was really easy — the hardest part was finding the canning jars in Wal-Mart. Here’s the finished product:

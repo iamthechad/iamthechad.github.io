@@ -1,7 +1,8 @@
 ---
 title: Optimizing images for iOS (and more)
-description: A simple tool for reducing PNG file sizes.
+excerpt: A simple tool for reducing PNG file sizes.
 tags: development ios
+categories: Development
 ---
 
 Now that Apple is [requiring launch images](http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html) in all iOS apps, many developers will see their application size increase, perhaps drastically. I use a fantastic (and free!) tool called [ImageOptim](http://imageoptim.com/) to reduce the size of the images in my projects.

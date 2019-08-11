@@ -1,6 +1,9 @@
 ---
 title: Why I Hate Working in Cubicles
 tags: work health
+categories: Health
+excerpt: Computer Vision Syndrome and fluorescent lighting are a bad combination.
+classes: wide 
 ---
 
 For some time now I’ve suffered from [Computer Vision Syndrome](http://www.mdsupport.org/library/cvs.html) (CVS). Most computer users have CVS to some degree or another — it’s pretty common. I also seem to have a susceptibility to flicker vertigo as well. Strangely enough, I’ve been unable to find very much material that talks about flicker vertigo in terms of computer use in an office environment. The only things I can find are advisories for pilots who fly propeller driven aircraft and helicopters.

@@ -1,8 +1,9 @@
 ---
 title: Simple Data Analysis with Pig
-description: Follow this simple example to get started analyzing real-world data with Apache Pig and Hadoop.
+excerpt: Follow this simple example to get started analyzing real-world data with Apache Pig and Hadoop.
 toc: true
 tags: development pig
+categories: Development
 ---
 
 Pig is a platform that works with large data sets for the purpose of analysis. The Pig dialect is called Pig Latin, and the Pig Latin commands get compiled into MapReduce jobs that can be run on a suitable platform, like Hadoop.
@@ -25,7 +26,7 @@ Type `head BX-Books.csv` to see the first few lines of the raw data. You’ll no
 
 The first line in the file looks like this:
 
-```
+```bash
 "ISBN";"Book-Title";"Book-Author";"Year-Of-Publication";"Publisher";"Image-URL-S";"Image-URL-M";"Image-URL-L"
 ```
 
@@ -33,7 +34,9 @@ This lines defines the data format of the fields in the file. We’ll want to re
 
 Open a terminal and enter:
 
-`sed 's/\&amp;/\&/g' BX-Books.csv | sed -e '1d' |sed 's/;/$$$/g' | sed 's/"$$$"/";"/g' | sed 's/"//g' > BX-BooksCorrected.txt`
+```bash
+sed 's/\&amp;/\&/g' BX-Books.csv | sed -e '1d' |sed 's/;/$$$/g' | sed 's/"$$$"/";"/g' | sed 's/"//g' > BX-BooksCorrected.txt
+```
 
 This will:
 
@@ -49,7 +52,7 @@ Steps 3 and 4 may look strange, but some of the field content may contain semico
 
 Now that we have some normalized data, we need to add it to the Hadoop file system (HDFS) so that Pig can access it. This can be accomplished from the command line as well as within Pig itself. For this example, we’ll use the command line. In the terminal, type:
 
-```
+```bash
 hadoop fs -mkdir input
 hadoop fs -put /path/to/BX-BooksCorrected.txt input
 ```
@@ -64,7 +67,7 @@ Enter `pig` at the console to start Pig.
 
 Once Pig has started, you’ll see the `grunt>` command prompt. Let’s verify that our file did get loaded into HDFS.
 
-```
+```bash
 ls
 hdfs://localhost.localdomain:8020/user/cloudera/input	<dir>
 cd input
@@ -78,7 +81,7 @@ Now that we have the data ready, let’s do something with it. The simple exampl
 
 **Load the data into a Pig collection:**
 
-```
+```bash
 books = LOAD '/user/cloudera/input/BX-BooksCorrected.txt'
 >> USING PigStorage(';') AS
 >> (ISBN:chararray, BookTitle:chararray,
@@ -91,7 +94,7 @@ books = LOAD '/user/cloudera/input/BX-BooksCorrected.txt'
 
 If you want to see what the loaded data structure looks like, you can use the `DESCRIBE` command:
 
-```
+```bash
 DESCRIBE books;
 books: {ISBN: chararray,BookTitle: chararray,BookAuthor: chararray,YearOfPublication: int,Publisher: chararray}
 ```
@@ -102,7 +105,7 @@ We’ll start with the simple analysis of how many books were written by year.
 
 **Group the collection by year of publication:**
 
-```
+```bash
 groupByYear = GROUP books BY YearOfPublication;
 
 DESCRIBE groupByYear;
@@ -113,7 +116,7 @@ This is a lot like a Java Map. The `groupByYear` collection contains all unique 
 
 **Generate book count by year:**
 
-```
+```bash
 countByYear = FOREACH groupByYear
 >> GENERATE group AS YearOfPublication, COUNT($1) AS BookCount;
 
@@ -125,7 +128,9 @@ This is the meat of the operation. The `FOREACH` loops over the `groupByYear` co
 
 We have the results, but how do we see them? We could store them back into HDFS and extract them that way, or we can use the `DUMP` command.
 
-`DUMP countByYear;`
+```bash
+DUMP countByYear;
+```
 
 You’ll see a listing of years, along with the number of books for that year. You may notice that some of the values don’t make much sense; there should be no year 0, nor should there be entries for a blank year. We’ll clean those problems up in the next analysis.
 
@@ -135,13 +140,15 @@ There’s a lot more data in the set beyond years and books counts. What if we w
 
 You should still have your `books` collection defined if you haven’t exited your Pig session. You can redefine it easily by following the above steps again. Let’s do a little bit of cleanup on the data this time, however.
 
-`books = FILTER books BY YearOfPublication > 0;`
+```bash
+books = FILTER books BY YearOfPublication > 0;
+```
 
 This will only keep records where we have a positive year of publication value.
 
 **Now, we need to create a set of all authors, and all years they wrote books:**
 
-```
+```bash
 pivot = FOREACH (GROUP books BY BookAuthor)
 >> GENERATE group AS BookAuthor, FLATTEN(books.YearOfPublication) AS Year;
 ```
@@ -151,7 +158,7 @@ Note that I’ve inlined the group creation in the `FOREACH` statement. It shoul
 
 **Create author book count by year:**
 
-```
+```bash
 authorYearGroup = GROUP pivot BY (BookAuthor, Year);
 
 with_count = FOREACH authorYearGroup
@@ -166,7 +173,7 @@ This time, we’re grouping on 2 fields. This will find all (author, year) combi
 
 **Let’s group those results a little better:**
 
-```
+```bash
 author_result = FOREACH (GROUP with_count BY BookAuthor) {
 >> order_by_count = ORDER with_count BY count DESC;
 >> GENERATE group AS Author, order_by_count.(Year, count) AS Books;
@@ -181,7 +188,7 @@ We’re running a `FOREACH` that looks different than the ones we’ve seen to t
 
 Group the author results by publisher:
 
-```
+```bash
 pub_auth = FOREACH books GENERATE Publisher, BookAuthor;
 
 distinct_authors = FOREACH (GROUP pub_auth BY Publisher) {
@@ -196,7 +203,7 @@ First, we use a projection to extract only the publisher and author from the boo
 
 **Join the results so far:**
 
-```
+```bash
 joined = JOIN distinct_flat BY Author, author_result BY Author;
 filtered = FOREACH joined GENERATE
 >> distinct_flat::Publisher AS Publisher,
@@ -208,7 +215,7 @@ Here we’re joining the author/year results with the publisher/author results. 
 
 **Generate the final results:**
 
-```
+```bash
 result = FOREACH (GROUP filtered BY Publisher) {
 >> order_by_pub = ORDER filtered BY Publisher ASC;
 >> GENERATE group AS Publisher, order_by_pub.(Author, Books); };
@@ -218,7 +225,7 @@ This should be familiar by now. We sort publishers, then generate a collection o
 
 At last! We have our results. You can `DUMP` them, but let’s also save the results back into HDFS.
 
-```
+```bash
 STORE result INTO '/user/cloudera/publisher_books';
 ```
 
@@ -226,13 +233,13 @@ Now you can exit Pig with “`quit`”.
 
 **Let’s get a file listing:**
 
-```
+```bash
 hadoop fs -ls publisher_books
 ```
 
 Hadoop stores `publisher_books` as a directory with associated files. Our actual data is in `part-r-00000`
 
-```
+```bash
 hadoop fs -cat publisher_books/part-r-00000
 ```
 

@@ -1,6 +1,9 @@
 ---
 title: Supporting the iPhone 5 Screen
 tags: ios development
+categories: Development
+excerpt: Adding iPhone 5 support to your app.
+classes: wide
 ---
 
 I had to dig a bit to find this information when adding iPhone 5 support to my app. It’s pretty easy: **you need to supply a 640px by 1136px launch image**. That’s it. Of course, there may be layout issues that need tending to afterwards, but that’s a different story.

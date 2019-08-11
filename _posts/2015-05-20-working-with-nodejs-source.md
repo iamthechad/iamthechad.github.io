@@ -1,7 +1,9 @@
 ---
 title: Working with NodeJS source
-description: I've been trying to set up a development environment for working on NodeJS source, with little luck.
+excerpt: I've been trying to set up a development environment for working on NodeJS source, with little luck.
 tags: development nodejs
+categories: Development
+classes: wide
 ---
 
 I’ve developed an interest in contributing to the NodeJS project, especially since I found some things while working on my [sslinfo](https://github.com/iamthechad/sslinfo) module that could be improved in the x509 realm.
@@ -20,7 +22,7 @@ My initial thought was to simply repurpose the [Vagrant setup I use to manage th
 
 Once I had the VM running, I SSH’ed in and ran the following:
 
-```
+```bash
 $ cd /opt/node
 $ make clean && rm -rf out
 $ ./configure
@@ -32,7 +34,7 @@ The code builds with no errors, but 14 tests fail.
 
 Failed test summary -
 
-```
+```bash
 Path: simple/test-cluster-http-pipe
 Error: bind EPERM
 
@@ -88,7 +90,7 @@ For this attempt, I didn’t bother setting a shared folder in the Vagrantfile. 
 
 The steps this time:
 
-```
+```bash
 $ cd /media/psf/Home/Documents/workspaces/node #Yeah, that's where I keep my code.
 $ make clean && rm -rf out
 $ ./configure
@@ -110,7 +112,7 @@ I didn’t bother with shared folders at all this time. I installed the handy [S
 
 Steps again:
 
-```
+```bash
 $ cd /home/cjohnston/node
 $ make clean && rm -rf out
 $ ./configure
@@ -122,7 +124,7 @@ Only 1 test fails this time, but it’s a new failure.
 
 Failed test summary -
 
-```
+```bash
 Path: simple/test-fs-realpath
 Error: EEXIST, file already exists '/home/cjohnston/node/test/fixtures/nested-index/one/symlink1-dir'
 ```

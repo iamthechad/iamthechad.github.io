@@ -1,6 +1,9 @@
 ---
 title: Overly Ambitious Eclipse Decorators
-tags: development
+tags: development java eclipse
+categories: Frame2
+excerpt: "I don’t think It’s just me, but maybe I am the only person who gets easily frustrated working on Eclipse plugins."
+classes: wide
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._
