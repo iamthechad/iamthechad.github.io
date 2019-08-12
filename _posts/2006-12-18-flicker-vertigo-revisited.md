@@ -4,6 +4,7 @@ tags: work health
 categories: Health
 excerpt: Flicker vertigo and aspartame
 classes: wide
+redirect_from: "/flicker-vertigo-revisited-e51e5d7683b9"
 ---
 
 Back in 2004 I wrote a piece about working in a cubicle ([Why I Hate Working in Cubicles]({{ site.baseurl }}{% post_url 2004-02-17-why-i-hate-working-in-cubicles %})). The main thrust of my entry was not so much that cubicles themselves are bad, but the overhead lighting was killing me.

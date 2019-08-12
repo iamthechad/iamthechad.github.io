@@ -4,6 +4,7 @@ tags: development
 categories: Frame2
 excerpt: "I’ve pretty much wrapped up the coding for the next version of Frame2, and decided to give the documentation a once-over."
 classes: wide
+redirect_from: "/documentation-is-always-the-hardest-part-5c5ce9318433"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

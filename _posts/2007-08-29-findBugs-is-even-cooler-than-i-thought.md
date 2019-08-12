@@ -4,6 +4,7 @@ tags: development java findbugs
 categories: Frame2
 excerpt: Fine tuning FindBugs to achieve better results.
 classes: wide
+redirect_from: "/findbugs-is-even-cooler-than-i-thought-a94249fb471c"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._
