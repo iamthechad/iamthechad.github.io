@@ -15,15 +15,20 @@
 # in the templates via {{ site.myvariable }}.
 title: Megatome Technologies
 email: cjohnston@megatome.com
+name: "Chad Johnston"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Occasional posts about development and other things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: iamthechad
-github_username:  iamthechad
+logo: "/assets/images/Megatome-Logo.png"
+og_image: "/assets/images/Megatome-Logo.png"
 timezone: America/Denver
+locale: "en-US"
+
+twitter:
+  username: "iamthechad"
+facebook:
+  username: "chadjohnston"
 
 repository: "iamthechad/iamthechad.github.io"
 
@@ -58,12 +63,9 @@ include:
 
 author:
   name   : "Chad Johnston"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/profile.png"
+  bio    : "Software developer and occasional maker."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://megatome.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/iamthechad"
