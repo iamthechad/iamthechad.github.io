@@ -4,6 +4,7 @@ excerpt: A simple method to open PDFs in a new window while displaying validatio
 tags: development seam
 categories: Development
 classes: wide
+redirect_from: "/open-pdf-in-new-window-with-seam-1b2925abf2e6"
 ---
 
 For a recent Seam development project, I had the task of creating a PDF report from some user input and displaying the result in a new window.

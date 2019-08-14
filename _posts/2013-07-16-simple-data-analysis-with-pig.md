@@ -4,6 +4,7 @@ excerpt: Follow this simple example to get started analyzing real-world data wit
 toc: true
 tags: development pig
 categories: Development
+redirect_from: "/simple-data-analysis-with-pig-ee4390c93085"
 ---
 
 Pig is a platform that works with large data sets for the purpose of analysis. The Pig dialect is called Pig Latin, and the Pig Latin commands get compiled into MapReduce jobs that can be run on a suitable platform, like Hadoop.

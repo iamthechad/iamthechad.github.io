@@ -4,6 +4,7 @@ excerpt: My co-worker tests his code with the `toString()` and visual grep metho
 tags: development java testing
 categories: Development
 classes: wide
+redirect_from: "/junit-just-wants-to-be-your-friend-8b42a97a5bf7"
 ---
 
 This is why you’re not allowed to have alcohol in the workplace.

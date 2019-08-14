@@ -4,6 +4,7 @@ excerpt: Follow this simple example to get started analyzing real-world data wit
 tags: development hive
 categories: Development
 toc: true
+redirect_from: "/simple-data-analysis-with-hive-cb4a48700419"
 ---
 
 Hive is a data warehouse system for Hadoop that facilitates easy data summarization, ad-hoc queries, and the analysis of large datasets stored in Hadoop compatible file systems. Hive provides a mechanism to project structure onto this data and query the data using a SQL-like language called HiveQL.

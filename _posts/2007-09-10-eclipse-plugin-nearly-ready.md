@@ -4,6 +4,7 @@ tags: development java eclipse
 categories: Frame2
 excerpt: The Eclipse plugin for Frame2 is almost done.
 classes: wide
+redirect_from: "/eclipse-plugin-nearly-ready-b3fe488de272"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

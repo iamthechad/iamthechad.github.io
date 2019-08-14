@@ -3,7 +3,8 @@ title: Some Things To Remember When Running A Small Business
 tags: business work
 categories: Business
 excerpt: "Several years ago, I worked for a small software shop. The company had gone through its number of growing pains, but seemed to be well established."
-classes: wide 
+classes: wide
+redirect_from: "/some-things-to-remember-when-running-a-small-business-4dcbc6115ce6" 
 ---
 
 Several years ago, I worked for a small software shop. The company had gone through its number of growing pains, but seemed to be well established by the time I joined. Time would prove me wrong, and also give me some things to remember if ever I start my own small business.

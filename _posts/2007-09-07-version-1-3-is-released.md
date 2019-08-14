@@ -4,6 +4,7 @@ tags: development java
 categories: Frame2
 excerpt: Version 1.3 of Frame2 is officially available.
 classes: wide
+redirect_from: "/version-1-3-is-released-662d718622ef"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

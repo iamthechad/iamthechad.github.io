@@ -4,6 +4,7 @@ tags: development java eclipse
 categories: Frame2
 excerpt: Frame2 1.3.1 is now available.
 classes: wide
+redirect_from: "/frame2-gets-a-point-release-db5175439da9"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

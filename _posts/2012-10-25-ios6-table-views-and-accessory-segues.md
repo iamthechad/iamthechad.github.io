@@ -4,6 +4,7 @@ excerpt: Getting the correct indexPath for a table cell's accessory action segue
 tags: ios development
 categories: Development
 classes: wide
+redirect_from: "/ios6-table-views-and-accessory-segues-23b041b1b879"
 ---
 
 If you’re performing segues on a table row selection, you’re probably used to doing something like this in the `prepareForSegue:` method:

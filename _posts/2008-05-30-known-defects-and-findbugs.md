@@ -4,6 +4,7 @@ tags: development java oss
 categories: Development
 excerpt: "I ran into a bit of a quandary the other day. I had to modify a piece of legacy code in our system — one that has no tests written against it."
 classes: wide
+redirect_from: "/known-defects-and-findbugs-7dbcab61ce37"
 ---
 
 I ran into a bit of a quandary the other day. I had to modify a piece of legacy code in our system — one that has no tests written against it. My first task was to write as many [JUnit](http://www.junit.org/) tests as I could to document the behavior of the component to help ensure that I didn’t break existing functionality with my changes.

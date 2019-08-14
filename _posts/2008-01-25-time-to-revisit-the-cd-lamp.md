@@ -4,6 +4,7 @@ tags: making
 categories: Making
 excerpt: "About two years ago I finished a project I’d been working on for a while — a CD lamp."
 classes: wide
+redirect_from: "/time-to-revisit-the-cd-lamp-33e9de8f2f6d"
 ---
 
 About two years ago I finished a project I’d been working on for a while — a CD lamp. I think it turned out pretty well:

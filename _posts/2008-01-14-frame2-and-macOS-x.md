@@ -4,6 +4,7 @@ tags: development java macos
 categories: Frame2
 excerpt: Currently, Frame2 does not work on Macs.
 classes: wide
+redirect_from: "/frame2-and-macos-x-39bcfb3e93fe"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

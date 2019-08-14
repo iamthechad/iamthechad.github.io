@@ -4,6 +4,7 @@ excerpt: Switching to an Agile process shines the light on a developer who has b
 tags: development agile
 categories: Agile
 classes: wide
+redirect_from: "/moving-to-agile-inertia-30b610d34f07"
 ---
 
 I’ve been given the dubious honor of leading a team using Scrum as a “pilot” to see how well it works for the company. I’ve used Scrum before and had a good amount of success, so I feel comfortable with the process.

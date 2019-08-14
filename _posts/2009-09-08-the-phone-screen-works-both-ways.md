@@ -4,6 +4,7 @@ excerpt: A phone screen is typically used to screen applicants for a job, but it
 tags: business work
 categories: Business
 classes: wide
+redirect_from: "/the-phone-screen-works-both-ways-dc9cecb721ba"
 ---
 
 I recently applied for a position through a recruiting service. I jumped through the requisite hoops and was told that the prospective employer was very excited to talk to me.
