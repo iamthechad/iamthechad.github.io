@@ -2,7 +2,9 @@
 title: Setting UITableView with grouped style background in iOS
 excerpt: Set a grouped table's backgroundView to nil to properly show a custom background when in a popover.
 tags: development ios
+categories: Development
 classes: wide
+redirect_from: "/setting-uitableview-with-grouped-style-background-in-ios-8ba78156e678"
 ---
 
 Setting the background of a `UITableView` is a simple operation in most cases. In my latest app, we set the background to a nice texture with a line like this:

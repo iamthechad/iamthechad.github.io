@@ -4,6 +4,7 @@ tags: development java
 categories: Frame2
 excerpt: Consistency is an important aspect of API design.
 classes: wide
+redirect_from: "/a-consistent-api-is-a-very-good-thing-f24f11e4b5b"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

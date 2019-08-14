@@ -4,6 +4,7 @@ excerpt: I've been trying to set up a development environment for working on Nod
 tags: development nodejs
 categories: Development
 classes: wide
+redirect_from: "/working-with-nodejs-source-9fe95b1765fe"
 ---
 
 I’ve developed an interest in contributing to the NodeJS project, especially since I found some things while working on my [sslinfo](https://github.com/iamthechad/sslinfo) module that could be improved in the x509 realm.

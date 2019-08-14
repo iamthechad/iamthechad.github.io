@@ -4,6 +4,7 @@ categories: Making
 keywords: making
 excerpt: See the jam jar pulse jet operate.
 classes: wide
+redirect_from: "/pulse-jet-in-action-d7aafdd3c9df"
 ---
 
 [As promised]({{ site.baseurl }}{% post_url 2007-04-29-made-jam-jar-pulse-jet %}), here’s the jam jar pulse jet in action. Let’s just say that it has a unique way of shutting itself down.

@@ -4,6 +4,7 @@ tags: development java eclipse
 categories: Frame2
 excerpt: "There’s been a bug in the Frame2 Eclipse plugin from day 1 that I believe I have finally squashed."
 classes: wide
+redirect_from: "/using-pipes-to-squash-a-bug-40b64a403862"
 ---
 
 _This post was originally part of a series documenting an open source web framework I worked on. The framework is well and dead, but I’m keeping these posts for posterity._

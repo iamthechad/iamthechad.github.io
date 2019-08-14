@@ -4,6 +4,7 @@ excerpt: I got admonished at my new job for coding practices that have become se
 tags: development java design
 categories: Development
 classes: wide
+redirect_from: "/is-refactoring-really-that-scary-2db872aa4271"
 ---
 
 I’ve been coding with an agile mindset for quite some time now. Some practices have become second nature to me over the years. One of these practices is aggressive code refactoring, coupled with test driven development (TDD).
